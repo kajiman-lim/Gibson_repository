@@ -1,44 +1,109 @@
-.menu{
+body{
+  margin: 0;
+  padding: 0;
+  }
+
+p{
+	text-align: justify;
+	line-height: 150%;
+	font-size: 15px;
+  }
+
+.menu, .menu_buttom{
   list-style-type: none; /*verhindert, dass Aufzählungspunkte angezeigt werden*/
   margin: 0; /*verhindert zusätzliche Abstände*/
   padding:0;
   }
-.menu_link{
+
+header{
+  text-align: center;
   background-color: black;
+  color: white;
+  padding: 15px;
+  }
+
+.menu_link{
+  background-color: #666666;
   color: white;
   text-decoration: none; /*Verhindert die Unterstreichung der Links*/
   border-bottom: 1px solid white;
-  display: block;
-  height: 40px;
-  text-align: center; /* horizontal zentriert*/
-  line-height: 40px;  /* vertikal zentriert*/
-  }
-
-img{
-  width:100%;
-  }
-
-.menu_link_buttom{
-  background-color: #f2f2f2;
-  color:#333333;
-  text-decoration: none; /*Verhindert die Unterstreichung der Links*/
   display: block;
   height: 35px;
   text-align: center; /* horizontal zentriert*/
   line-height: 35px;  /* vertikal zentriert*/
   }
 
-  @media screen and (min-width: 500px) {
+.main-body{
+  margin-top: 20px;
+  border-top: 1px solid #333333;
+  border-bottom:1px solid #333333;
+}
 
-    .menu_link{
-      border-right: 1px solid white; /*Zur besseren Unterscheidung der Menü-Elemente*/
-      }
+.menu_link_buttom{
+  background-color: #f2f2f2;
+  color:#333333;
+  text-decoration: none; /*Verhindert die Unterstreichung der Links*/
+  display: block;
+  height: 30px;
+  text-align: center; /* horizontal zentriert*/
+  line-height: 30px;  /* vertikal zentriert*/
+  }
 
-    .menu{
-      display: flex; /*Notwendig, damit flex-direction und flex-grow funktionieren*/
-      flex-direction: row; /*Alle Elemente innerhalb von ul werden horizontal angeordnet*/
-      }
+footer{
 
-    .menu_item{
-      flex-grow: 1; /*Alle Elemente mit dieser Klasse werden auf die gleiche Größe skaliert.*/
-      }
+  }
+
+section{
+  padding: 10px;
+  }
+
+img{
+  width:100%;
+  border-bottom:1px solid #999999;
+  }
+
+@media screen and (min-width: 500px) {
+
+  .menu_link{
+    border-right: 1px solid white; /*Zur besseren Unterscheidung der Menü-Elemente*/
+    }
+
+  .menu{
+    display: flex; /*Notwendig, damit flex-direction und flex-grow funktionieren*/
+    flex-direction: row; /*Alle Elemente innerhalb von ul werden horizontal angeordnet*/
+    }
+
+  .menu_item{
+    flex-grow: 1; /*Alle Elemente mit dieser Klasse werden auf die gleiche Größe skaliert.*/
+    }
+  }
+
+@media screen and (min-width: 600px) {
+  .menu_link{
+    border-top: 1px solid white; /* Menü-Elemente besitzen weiße Ränder*/
+    }
+
+  p{
+  	text-align: justify;
+  	line-height: 150%;
+  	font-size: 18px;
+    }
+
+  .menu_buttom{
+    display: flex; /*Notwendig, damit flex-direction und flex-grow funktionieren*/
+    flex-direction: row; /*Alle Elemente innerhalb von ul werden horizontal angeordnet*/
+    }
+  .menu_item_buttom{
+    flex-grow: 1; /*Alle Elemente mit dieser Klasse werden auf die gleiche Größe skaliert.*/
+    }
+  }
+
+@media screen and (min-width: 1000px) {
+  body{
+    width: 80%;
+    margin: 0 auto;
+    }
+  .main-body{
+    border: 1px solid #333333;
+    }
+  }
