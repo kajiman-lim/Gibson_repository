@@ -74,6 +74,7 @@ img{
     }
 
   .menu_item{
+      border-right: 1px solid white;
     flex-grow: 1; /*Alle Elemente mit dieser Klasse werden auf die gleiche Größe skaliert.*/
     }
   }
