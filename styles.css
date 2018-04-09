@@ -26,4 +26,19 @@ img{
   height: 35px;
   text-align: center; /* horizontal zentriert*/
   line-height: 35px;  /* vertikal zentriert*/
-  }	
+  }
+
+  @media screen and (min-width: 500px) {
+
+    .menu_link{
+      border-right: 1px solid white; /*Zur besseren Unterscheidung der Menü-Elemente*/
+      }
+
+    .menu{
+      display: flex; /*Notwendig, damit flex-direction und flex-grow funktionieren*/
+      flex-direction: row; /*Alle Elemente innerhalb von ul werden horizontal angeordnet*/
+      }
+
+    .menu_item{
+      flex-grow: 1; /*Alle Elemente mit dieser Klasse werden auf die gleiche Größe skaliert.*/
+      }
